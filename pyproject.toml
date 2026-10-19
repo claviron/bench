@@ -1,0 +1,15 @@
+[project]
+name = "bench"
+version = "0.1.0"
+requires-python = ">=3.15"
+dependencies = []
+
+[tool.claviron.composer]
+state-directory = "target/composer"
+
+[[tool.claviron.composer.packages]]
+name = "claviron/bench"
+remote = "git@github.com:claviron/php-bench.git"
+directory = "packages/php"
+license = "LICENSE"
+include = ["composer.json", "README.md", "src", "routes", "public"]

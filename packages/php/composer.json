@@ -1,0 +1,20 @@
+{
+    "name": "claviron/bench",
+    "description": "Optional runner-independent PHP and framework benchmark workloads",
+    "type": "library",
+    "license": ["MIT", "Apache-2.0"],
+    "keywords": ["benchmark", "php", "laravel", "symfony", "claviron"],
+    "homepage": "https://github.com/claviron/bench",
+    "support": {
+        "source": "https://github.com/claviron/bench",
+        "issues": "https://github.com/claviron/bench/issues"
+    },
+    "autoload": {
+        "psr-4": {"Claviron\\Bench\\": "src/"}
+    },
+    "require": {"php": ">=8.2"},
+    "suggest": {
+        "laravel/framework": "Required only for the Laravel route adapter",
+        "symfony/framework-bundle": "Required only for the Symfony controller adapter"
+    }
+}

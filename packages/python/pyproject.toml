@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=77.0.3"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "claviron-bench"
+version = "0.1.0"
+description = "Reusable, runner-independent HTTP benchmark workloads"
+readme = "README.md"
+license = "MIT OR Apache-2.0"
+license-files = ["LICENSE"]
+keywords = ["benchmark", "asgi", "wsgi", "fastapi", "claviron"]
+requires-python = ">=3.10"
+
+[project.urls]
+Source = "https://github.com/claviron/bench"
+Issues = "https://github.com/claviron/bench/issues"
+
+[project.optional-dependencies]
+fastapi = ["fastapi"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["claviron_bench*"]
+namespaces = false

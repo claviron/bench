@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.venv*/
+*.egg-info/
+build/
+dist/
+vendor/
+results/*
+!results/.gitkeep
+.idea/
+.DS_Store
+/target/
+*.local.md
